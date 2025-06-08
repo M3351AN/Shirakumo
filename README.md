@@ -10,7 +10,7 @@ A RPM/WPM proxy with named pipe
 ## KnownIssues
 
 - Currently only works on x64 processes
-- Current implementation directly calls the Win API, so that just as an example
+- Current implementation directly calls the Win API, so that just as a PoC
 - Processing cycle for each RPM/WPM request is long, which is not suitable for high-frequency/concurrent RPM/WPM requests.
 - Current implementation is not thread-safe
 
