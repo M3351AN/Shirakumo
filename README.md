@@ -5,6 +5,7 @@ A RPM/WPM proxy with named pipe
 ## Features
 
 - Implement RPM/WPM in separate processes and communicate via FIFO (named pipes) to handle requests
+- Allows you load it as .dll into an existing process to implement RPM/WPM proxying in another process
 
 ## KnownIssues
 
