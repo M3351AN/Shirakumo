@@ -6,6 +6,13 @@ A RPM/WPM proxy with named pipe
 
 - Implement RPM/WPM in separate processes and communicate via FIFO (named pipes) to handle requests
 
+## KnownIssues
+
+- Currently only works on x64 processes
+- Current implementation directly calls the Win API, so that just as an example
+- Processing cycle for each RPM/WPM request is long, which is not suitable for high-frequency/concurrent RPM/WPM requests.
+- Current implementation is not thread-safe
+
 ## License
 
 This project is licensed under [**TOSSRCU**](LICENSE).
